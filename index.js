@@ -1,4 +1,4 @@
-var OPS = require("bitcoincash-ops");
+var OPS = require("@psf/bitcoincash-ops");
 
 function encodingLength(i) {
   return i < OPS.OP_PUSHDATA1 ? 1 : i <= 0xff ? 2 : i <= 0xffff ? 3 : 5;
